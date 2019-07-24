@@ -20,14 +20,20 @@ def Quadratic_Solver():
 
   print ("\n")
 
-  print (Solve_4_Addition)
-  print ("or")
-  print (Solve_4_Subtraction)
+  if Solve_4_Addition == Solve_4_Subtraction:
+    print (Solve_4_Addition)
+  else:
+
+    print (Solve_4_Addition)
+    print ("or")
+    print (Solve_4_Subtraction)
 
   print ("\n")
 
 
   Do_Again_Question = input("Press 1 and hit enter to go again: ")
+
+  print ("\n")
 
   if Do_Again_Question == "1":
     Quadratic_Solver()
